@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p>Hello</p>
+    <button onclick="whileLoopFun()">while Me </button>
+    <script>
+        function whileLoopFun(){
+            var a=1;
+            document.write("<ul>")
+            while(a<=10){
+                document.write("<li>I'm "+ a+ "</li>");
+                a=a+1;
+            }
+            document.write("</ul>")
+        }
+    </script>
+    <button onclick="doWhileLoopFun()">Do While Me</button>
+    <script>
+        function doWhileLoopFun(){
+            var b=20;
+            document.write("<ul>")
+            do{
+                document.write("<li>I'm "+ b+ "</li>");
+                b=b+1;
+            }
+            while(b<=40)
+            document.write("</ul>")
+        }
+    </script>
+
+<button onclick="forLoop()">For Loop</button>
+<script>
+    function forLoop(){
+        for(var c=30;c<=50;c++){
+    if(c==40){
+        document.write("Im number "+c);
+        continue;
+    }
+            document.write("<li>I'm "+ c+ "</li>");
+        }
+    }
+</script>
+
+<button onclick="evenOrOddNumbers()">Even OR Odd</button>
+<script>
+    function evenOrOddNumbers(){
+        for(var eo=1; eo<=100;eo++){
+            if(eo%2==0){
+                document.write("<li>Im Even "+eo+"</li>");
+            }
+            else{
+                document.write("<li>Im Odd "+eo+"</li>");
+
+            }
+        }
+    }
+</script>
+
+<button onclick="needLoopTable()">Nested Loop Table</button>
+<script>
+    function needLoopTable(){
+        for(var a=1;a<=200;a=a+20){
+           for(var b=a;b<a+20;b=b+10){
+            for(var c=b;c<b+10;c++){
+                document.write("I'm "+ c );
+            }
+            document.write("<br>");
+           }
+           document.write("<br>")
+        }
+    }
+</script>
+
+<button onclick="nestedLoopExample1()">nestedLoopExample1</button>
+<script>
+    function nestedLoopExample1(){
+        for(a=1;a<=5;a++){
+            document.write(a)
+            for(b=1;b<=a;b++){
+                document.write(a);
+            }
+            document.write( "<br>");
+        }
+        document.write( "<br>");
+    }
+</script>
+    <!-- <script src="index1.js"></script> -->
+</body>
+
+</html>
